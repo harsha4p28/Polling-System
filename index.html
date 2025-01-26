@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HTML</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+    <h1>Poll system</h1>
+    <div id="question">
+      <h2>who is more intelligent?</h2>
+      <div class="option" onclick="perform(this,'one')">Ant</div>
+      <div class="option" onclick="perform(this,'two')">Bee</div>
+      <div class="option" onclick="perform(this,'three')">Pig</div>
+      <div class="option" onclick="perform(this,'four')">Donkey</div>
+      <button type="button" id="button" onclick="poll()">
+        Submit
+      </button>
+    </div>
+    <div id="details">
+      <h3 >Votes</h3>
+      <div class="progress-container">
+        Ant<div class="one" id="one">0%</div>
+      </div>
+      <div class="progress-container">
+        Bee  <div class="two" id="two">0%</div>
+      </div>
+      <div class="progress-container">
+        Pig   <div class="three" id="three">0%</div>
+      </div>
+      <div class="progress-container">
+        Donkey<div class="four" id="four">0%</div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
